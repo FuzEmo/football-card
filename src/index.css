@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card-main{
+position: relative;
+height: 580px;
+width: 380px;
+min-width: 380px;
+min-height: 580px;
+margin:auto;
+border-radius: 20px;
+border-width: 10px;
+border-color: whitesmoke;
+border-style: solid;
+background-color:rgb(15, 11, 80);
+perspective: 1000px;
+
+}
+
+.player-image{
+  height: 580px;
+  width: 280px;
+  background-color:transparent;
+  background-image: url(https://www.fenerbahce.org/getmedia/64e9a0d9-9cf8-4326-8c6a-48e3949b4d38/boydangustavo.png);
+  background-repeat: no-repeat;
+  background-size: 520px ;
+  background-position-x: -65px;
+  background-position-y: -10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 100px;
+  z-index: 2;
+}
+.team-image{
+  position: absolute;
+  width: 380px;
+  height: 580px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/tr/8/85/200px-Fenerbah%C3%A7e.png);
+  background-size: 460px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: -125px;
+  opacity: .6;
+  z-index: 1;
+
+}
+
+.team-image:hover{
+  opacity: 1;
+}
+.player-image:hover +.team-image{
+  opacity: 1;
+}
+
+
+.stats-button{
+  position: absolute;
+  width: 35%;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+  border-radius: 20px 20px 8px 8px;
+  border-color: rgb(60, 49, 214);
+  border-style: solid;
+  border-width: 5px;
+  text-align: left;
+  padding-left: 45px;
+}
+.emre{
+  display: inline-block;
+  width: 100%;
+}
