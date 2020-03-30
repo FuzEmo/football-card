@@ -8,13 +8,15 @@ function App() {
 
 
     <div className="App">
- 
-      <FootballCard/>   
 
+      <div className="players-layout">
+      <FootballCard/>  
+      </div>
+  
     </div>
 
 
-    
+ 
   );
 }
 

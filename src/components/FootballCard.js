@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import {useFetchPlayers} from "../Players"
+
+
 
 export const FootballCard = () => {
-    return (
-     <div className="card-main">
-       <div className="card-animation">
+
+    const players = useFetchPlayers();
+
+        const Players = players.players;
+        console.log(Players);
+
+    return  ( 
+         Players.map((player) => (
+
+ <div className="card-main" >
         <div className="card-front">
-            <div className="player-image"/>
-            <div className="team-image"/>
+            <div className="player-image-container"> 
+            <img className="player-image"
+                 alt='player'
+                 src={player.picture}></img>
         </div>
-        <div className="card-back">
-            <div>Stats</div>
+        <div className="team-image"/>
+        <div className="card-back">  
+           <div>Stats </div>
+
         </div>
        </div>
-     </div>
+  </div>
 
-            
-        
+      ))
     );
 }
