@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import {FootballCard} from "./components/FootballCard";
-
+import $ from "jquery";
 function App() {
+ 
+  
   return (
     
 
