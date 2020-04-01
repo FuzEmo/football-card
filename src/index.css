@@ -56,8 +56,9 @@ code {
 .flip .card .back {
   transform: rotateY(-180deg);
   background-color:rgb(15, 11, 80);
-  color: yellow;
+  color: white;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .player-image-container{
@@ -100,6 +101,74 @@ code {
   display: flex;
     -ms-flex-flow: wrap;
     flex-flow: wrap;
+}
+
+.player-name{
+  font-size: 30px;
+}
+.player-surname{
+
+  font-size: 40px;
+}
+.stats{
+position: relative;
+height: 300px;
+top:45px;
+
+  }
+.matches{
+  font-size: 35px;
+}
+.goals{
+  float: left;
+  position: absolute;
+  left: 55px;
+  font-size: 30px;
+}
+.asists{
+float: right;
+position: absolute;
+right: 55px;
+font-size: 30px;
+}
+.player-info{
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  top: 175px;
+}
+.player-position{
+  float: left;
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 30px;
+}
+
+.flag-container{
+  width: 100px;
+  height: 70px;
+  background-color:transparent;
+  margin-left: 65%;
+  margin-top: 17%;
 
 
+
+}
+.flag{
+
+  width: 95px;
+  height: 55px;
+  bottom: 0;
+  left: 0;
+}
+.nationality{
+width: 20%;
+margin-left: 67%;
+margin-top: -3%;
+}
+.value{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
